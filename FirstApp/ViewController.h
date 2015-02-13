@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InternetConnection.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *labelToChangeText;
 
+@property (weak, nonatomic) IBOutlet UITextField *labelContentTextBox;
+
+- (IBAction)buttonChangeText:(id)sender;
 @end
 
