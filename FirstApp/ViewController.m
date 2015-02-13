@@ -30,8 +30,9 @@
     NSString *textFromTextBox = self.labelContentTextBox.text;
     self.labelToChangeText.text = textFromTextBox;
     [self.labelContentTextBox   resignFirstResponder];
-//    InternetConnection *connection = [[InternetConnection alloc] init];
-//    [connection connectWithUrl];
-//    self.labelToChangeText.text = [connection.siteUrl absoluteString];
+    InternetConnection *connection = [[InternetConnection alloc] init];
+    [connection connectWithUrl];
+    self.labelToChangeText.text = [connection.siteUrl absoluteString];
+    
 }
 @end
